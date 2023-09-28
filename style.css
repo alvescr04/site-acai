@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&family=Gloock&family=Noto+Sans:ital,wght@0,100;0,300;1,100;1,400&family=Philosopher&family=Roboto:wght@100;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cor-roxo: #a37094;
+  --cor-black: #111;
+  --cor-white:#ffff
+}
+/* Estilizaçao do header */
+
+nav {
+  width: 100%;
+  background: var(--cor-roxo);
+  color: var(--cor-white);
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  padding: 1em;
+  gap: 50px;
+  font-family: "Philosopher", sans-serif;
+  border-bottom: 2px solid var(--cor-black);
+}
+.logo-carminina{
+display: flex;
+  height: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 1em 0;
+  font-size: 20px;
+}
+nav ul li a {
+  padding: 1em;
+  text-decoration: none;
+  color: var(--cor-black);
+  transition: 100ms;
+  }
+nav ul li a:hover {
+  color:var(--cor-white);
+  }
+nav .busacr {
+  font-size: 12px;
+  }
+.pesquisar{
+  display: flex;
+  margin-right: 50px;
+  padding: 2px;
+  }
+.buscar-1{
+  border-radius: 8px;
+}
+.buscar-1::placeholder{
+  position: absolute;
+  top: 2px; 
+  left: 20px;
+  
+  bottom: 2px;
+}
+.botao {
+  text-decoration: none;
+  background:var(--cor-white);
+  border-radius: 12px;
+  border: none;
+  color:var(--cor-roxo);
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  }
+.botao:hover {
+  cursor: pointer;
+  color:var(--cor-white);
+  background-color: var(--cor-black);
+  border: none;
+}
+
+  /* Estilização do main */
+
+.galeria {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  }
+  
+.secao-1 img {
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  flex: 2 1 10px;
+  transition: 0.5s;
+  opacity: 0.5;
+  }
+img:hover {
+  flex: 2 2 100px;
+  opacity: 1;
+  }
+  
+  /* Seçao -2 */
+  
+  .secao-2 {
+    display: flex;
+    text-align: center;
+    background-color: var(--cor-roxo);
+    justify-content: center;
+  }
+  .fruto-acai {
+    align-self: center;
+    margin-left: 80px;
+  }
+  
+  .acaifruto {
+    width: 80%;
+    border-radius: 40pc;
+  }
+  
+  .textos {
+    margin: 60px;
+    font-family: "Philosopher", sans-serif;
+    width: 600px;
+    justify-content: center;
+    padding: 40px;
+    text-align: justify;
+  }
+  
+  /* Seçao -3 */
+  
+  .galeria {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .secao-3 img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    flex: 2 1 10px;
+    transition: 0.5s;
+    opacity: 0.5;
+  }
+  img:hover {
+    flex: 2 2 100px;
+    opacity: 1;
+  }
+  
+  /* Seçao -4 */
+  
+  .secao-4 {
+    display: flex;
+    text-align: center;
+    background-color: var(--cor-roxo);
+    justify-content: center;
+  }
+  .cupuacufruto {
+    align-self: center;
+    margin-right: 80px;
+  }
+  .cupufruto {
+    width: 70%;
+    border-radius: 40pc;
+  }
+  
+  /* Estilizando o footer */
+  
+  footer {
+    
+    width: 100%;
+    background: var(--cor-black);
+    color:var(--cor-white);
+    display: grid;
+    place-items: center;
+    padding: 1em;
+    font-size: 1.2rem;
+    font-family: "Philosopher", sans-serif;
+  }
+  .redes-sociais {
+    display: flex;
+    margin-left: 10%;
+    font-size: 1.4rem;
+    justify-content: space-between;
+  }
+
+  footer .icons {
+    padding: 1em;
+    text-decoration: none;
+    color:var(--cor-white);
+    transition: 100ms;
+  }
+  footer .icons:hover {
+    color: var(--cor-roxo);
+  }
+  footer ul li a {
+    padding: 1em;
+    text-decoration: none;
+    color:var(--cor-white);
+    transition: 100ms;
+  }
+  footer ul li a:hover {
+    color: var(--cor-roxo);
+  }
+  footer p {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  /* Estilizaçao do Açai e Cupuaçu */
+  
+  .main-acai{
+    background-image:url(acai-principal.jpg);
+    display: flex;
+    background-color: var(--cor-white);
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    font-family:"Philosopher", sans-serif;
+  }
+  .container-1{
+    display: block;
+    text-align: start;
+  }
+  .titulo-acai{
+    display: block;
+    text-align:start;
+    padding-top: 10px;
+  }
+  .titulo-acai h1{
+    text-align: center;
+    font-weight: bolder;
+  }
+  .form-checkradio label{
+    padding-left: 1px;
+    text-align: start;
+  }
+  
+  .container-2{
+    display: block;
+    text-align: start;
+    
+  }
+  .container-total {
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    width: 50%;
+    font-size: 15px;
+    text-align:center;
+    width: 420px;
+    height: 83%;
+    padding: 20px;
+    background: transparent;
+    color:var(--cor-white);
+  }
+  .button{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .botao-2{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
+  }
+  .botao-2:hover {
+    cursor: pointer;
+    color:var(--cor-roxo);
+  }
+
+  /* Estilizaçao do Sobre */
+
+  .sobre{
+    display: flex;
+    height: 700px;
+    background-color: var(--cor-roxo);
+    font-family:"Philosopher", sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    border: 3px solid rgba(233, 227, 227, 0.2);
+    backdrop-filter: blur(70px);
+    box-shadow: 10px 10px  10px rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    font-size: 18px;
+    background: transparent;
+    color:var(--cor-white);
+  }
+  .card-body h5{
+    padding-top: 40px;
+    text-align: center;  
+  }
+  .card-body p{
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: justify;
+  }
+  .icons-redes{
+    padding-top: 20px;
+    text-align: center;
+  }
+  .icons-redes a{
+    color: var(--cor-black);
+    padding-left: 5%;
+  }
+ 
+  .card-body a:hover{
+    color: var(--cor-white);
+  }
